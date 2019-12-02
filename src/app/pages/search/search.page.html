@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref></ion-back-button>
+    </ion-buttons>
+    <ion-title>search</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar placeholder="Filter Pizza"></ion-searchbar>
+  <ion-searchbar placeholder="搜索" animated showCancelButton="focus" cancelButtonText="取消"></ion-searchbar>
+  <ion-searchbar placeholder="搜索2" animated></ion-searchbar>
+  <ion-searchbar placeholder="搜索3" animated color="primary"></ion-searchbar>
+  <ion-searchbar placeholder="搜索4" (ionChange)="onSearchChange($event)" [debounce]="500"></ion-searchbar>
+</ion-content>
