@@ -28,8 +28,8 @@ export class DatetimeComponent implements OnInit {
 
   ngOnInit() { }
 
-  datetimeChange(e) {
-    console.log(sd.format(e, 'YYYY-MM-DD'));
+  datetimeChange() {
+    console.log(sd.format(this.day, 'YYYY-MM-DD'));
   }
 
 }

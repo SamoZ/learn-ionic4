@@ -3,7 +3,7 @@
   <ion-item>
     <ion-label>日期</ion-label>
     <ion-datetime display-format="YYYY-MM-DD" [(ngModel)]="day" cancelText="取消" doneText="确认"
-      (ionChange)="datetimeChange($event)">
+      (ionChange)="datetimeChange()">
     </ion-datetime>
   </ion-item>
 </ion-list>
@@ -11,7 +11,8 @@
 <ion-list>
   <ion-item>
     <ion-label>自定义日期组件</ion-label>
-    <ion-datetime [pickerOptions]="customPickerOptions" placeholder="选择年份" displayFormat="YYYY" min="1981" max="2002">
+    <ion-datetime [(ngModel)]="year" [pickerOptions]="customPickerOptions" placeholder="选择年份" displayFormat="YYYY"
+      min="1981" max="2002">
     </ion-datetime>
   </ion-item>
 </ion-list>
