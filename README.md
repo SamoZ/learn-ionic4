@@ -6,6 +6,7 @@
 
 ## Ionic Info
     ionic info
+运行上面的命令，如果发现红框的两个未安装，使用 `npm install` 将其安装
 ![img](./md_images/1.png)
 
 ## 运行命令
