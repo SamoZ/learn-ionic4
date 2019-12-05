@@ -13,7 +13,10 @@ import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot({
+    mode: 'ios',
+    backButtonText: '返回'
+  }), AppRoutingModule],
   providers: [
     StatusBar,
     SplashScreen,

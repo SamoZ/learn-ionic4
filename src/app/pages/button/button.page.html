@@ -69,4 +69,52 @@
   <ion-button fill="clear">
     <ion-icon slot="icon-only" name="checkbox-outline"></ion-icon>
   </ion-button>
+
+  <ion-button (click)="showAction()">
+    弹出ActionSheet
+  </ion-button>
+
+  <ion-button (click)="presentAlert()">
+    Alert
+  </ion-button>
+  <ion-button (click)="presentAlertMultipleButtons()">
+    AlertMultiple
+  </ion-button>
+  <ion-button (click)="presentAlertConfirm()">
+    AlertConfirm
+  </ion-button>
+  <ion-button (click)="presentAlertPrompt()">
+    AlertPrompt
+  </ion-button>
+  <ion-button (click)="presentAlertRadio()">
+    AlertRadio
+  </ion-button>
+  <ion-button (click)="presentAlertCheckbox()">
+    AlertCheckbox
+  </ion-button>
+
+  <ion-button (click)="presentToast()">
+    Toast
+  </ion-button>
+  <ion-button (click)="presentToastWithOptions()">
+    ToastOptions
+  </ion-button>
+
+  <ion-button (click)="presentLoading()">
+    Loading
+  </ion-button>
+  <ion-button (click)="presentLoadingWithOptions()">
+    LoadingOption
+  </ion-button>
+
+  <ion-button (press)="doPress()">
+    长按触发事件
+  </ion-button>
+  <ion-button (tap)="presentLoading()">
+    点击触发事件
+  </ion-button>
+
+  <ion-button (click)="presentModal()">
+    Modal
+  </ion-button>
 </ion-content>
