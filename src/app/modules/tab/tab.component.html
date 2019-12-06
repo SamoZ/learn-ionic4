@@ -1,16 +1,18 @@
-<ion-segment [(ngModel)]="tabs" (ionChange)="segmentChanged($event)">
-  <ion-segment-button value="pizza">
-    <ion-label>Pizza</ion-label>
-  </ion-segment-button>
-  <ion-segment-button value="pasta">
-    <ion-label>Pasta</ion-label>
-  </ion-segment-button>
-</ion-segment>
-<div [ngSwitch]="tabs">
-  <div *ngSwitchCase="'pizza'">
-    Pizza
-  </div>
-  <div *ngSwitchCase="'pasta'">
-    Pasta
+<div class="ion-padding">
+  <ion-segment [(ngModel)]="tabs" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="pizza">
+      <ion-label>Pizza</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="pasta">
+      <ion-label>Pasta</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <div [ngSwitch]="tabs">
+    <div *ngSwitchCase="'pizza'">
+      Pizza
+    </div>
+    <div *ngSwitchCase="'pasta'">
+      Pasta
+    </div>
   </div>
 </div>

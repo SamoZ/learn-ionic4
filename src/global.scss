@@ -24,3 +24,25 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+ion-infinite-scroll-content {
+    min-height: 32px;
+}
+.infinite-loading {
+    margin-bottom: 32px;
+}
+.infinite-loading-spinner {
+    display: inline-block;
+    vertical-align: bottom;
+}
+.infinite-loading-text {
+    display: inline-block;
+    height: 32px;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-inline-start: 5px;
+    margin-inline-end: 0;
+}
+ion-header {
+    padding-top: 28px;
+}
