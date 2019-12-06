@@ -4,7 +4,8 @@ import {
   AlertController,
   ToastController,
   LoadingController,
-  ModalController
+  ModalController,
+  NavController
 } from '@ionic/angular';
 
 import { LoginComponent } from './../../modules/login/login.component';
@@ -21,10 +22,15 @@ export class ButtonPage implements OnInit {
     public alertController: AlertController,
     public toastController: ToastController,
     public loadingController: LoadingController,
-    public modalController: ModalController
+    public modalController: ModalController,
+    public navController: NavController
   ) { }
 
   ngOnInit() {
+  }
+
+  goBack() {
+    this.navController.back();
   }
 
   async showAction() {
