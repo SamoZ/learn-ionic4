@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 import { Platform, ToastController } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-import { AppMinimize } from '@ionic-native/app-minimize/ngx';
 import { Subscription } from 'rxjs';
 import { Router, NavigationEnd } from '@angular/router';
 
@@ -22,7 +21,6 @@ export class AppComponent {
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
     private router: Router,
-    private appMinimize: AppMinimize,
     private toastController: ToastController
   ) {
     this.initializeApp();

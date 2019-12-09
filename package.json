@@ -25,7 +25,6 @@
     "@ionic-native/status-bar": "^5.17.1",
     "@ionic/angular": "^4.7.1",
     "cordova-android": "^8.1.0",
-    "cordova-ios": "^5.1.0",
     "cordova-plugin-appminimize": "^1.0.1",
     "core-js": "^2.5.4",
     "hammerjs": "^2.0.8",
@@ -78,7 +77,6 @@
       "cordova-plugin-appminimize": {}
     },
     "platforms": [
-      "ios",
       "android"
     ]
   }
